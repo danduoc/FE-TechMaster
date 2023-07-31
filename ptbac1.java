@@ -12,33 +12,15 @@ public class ptbac1 {
         b = scanner.nextDouble();
 
            
-        if (a==0) {
-        	System.out.println("đưa về pt bậc 1");
-        	if(b==0){
-                if(c==0){
+           	if(a==0){
+                if(b==0){
              	   System.out.println("Pt vô số nghiệm");
                  }else{
      	            System.out.println("Pt vô nghiệm");
                  }
              }else{
-             	double y = -c/b;
-                 System.out.println("x = " + y);
-        }}else {
-        	double dta = b*b-4*a*c;
-        	
-        	if (dta<0) {
-        		System.out.println("vô nghiệm");
-        	}else {
-        		if (dta==0){
-        			double x = -b*1.0/(2*a);
-        			System.out.println("nghiệm kép x1 = x2 = " +x);
-        		}else{
-        			double x1 = (-b+Math.sqrt(dta))/(2*a);
-        			double x2 = (-b-Math.sqrt(dta))/(2*a);
-        			System.out.println("nghiệm x1= " +x1);
-        			System.out.println("nghiệm x2= " +x2);
-        		}
+             	double x = -b/a;
+                 System.out.println("x = " + x);
         	}
-        }
     }
 }
