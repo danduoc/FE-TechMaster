@@ -1,4 +1,4 @@
-import java.util.Scanner;
+iimport java.util.Scanner;
 
 public class KiemTraNamNhuan {
 	 public static void main(String[] args) {
@@ -6,11 +6,18 @@ public class KiemTraNamNhuan {
 	        
 		 System.out.println("nhập năm cần kiểm tra");
 	     int n = scanner.nextInt();
-	        
+	     
+	     if (n<1) {
+	    	 System.out.println("định dạng năm không hợp lệ");
+		} else {
+
+		
+	     
 	     if( (n%4 == 0 && n%100 !=0) || n%400 == 0 ){
 	            System.out.printf(+n+" là năm nhuận", n);
 	     }else{
 	            System.out.println(+n+" không phải là năm nhuận");
 	        }
+		}
 	 }
 }
