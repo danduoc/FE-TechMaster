@@ -5,20 +5,13 @@ public class soLonNhat {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = 0;
-		do {
-			System.out.println("N=");
-			n = sc.nextInt();
-			
-		} while (n <= 0);
-        int max = 0;
-        int phanDu = n;
-        
-        while (phanDu > 0) {
-            if (phanDu > max) {
-				max = phanDu;
-			}
-        }
-
-        System.out.println("Chữ số lớn nhất là " + max);
+		System.out.println("N=");
+		n = sc.nextInt();
+		int max = 0;
+		for (int i = 1; i <= n; i++) {
+			max = 10 * max + 9;
+		}
+		
+			System.out.println("Số nguyên dương lớn nhất có " +n+ " chữ số là: " +max);
 	}
 }
