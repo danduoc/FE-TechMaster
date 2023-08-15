@@ -18,17 +18,15 @@ public class xoaPTK {
 		}
 		System.out.print("Nhập số K cần xoá: ");
         int k = sc.nextInt();
-        int j = 0;
-        for (int i = 0; i < n; i++) {
-        	if (a[i] == k) {
-        		j=i;
-        		for(i=j ; i < n-1 ; i++){
-        			a[i] = a[i+1];
-        		}
-        		n--;
-        	}
-     
-        }
+        for (int i = n-1; i >= 0; i--) {
+			if (a[i] == k) {
+				int j=i;
+				for(i=j ; i < n-1 ; i++){
+				   a[i] = a[i+1];
+				}
+				n--;
+			}
+		}
         System.out.println("mảng sau khi xóa "+k+" : ");
         for (int i = 0; i < n; i++) {
 			System.out.println("a [" +i+ "] = " +a[i]);
