@@ -7,7 +7,7 @@ public class chuoi {
 		for (int i = 0; i < cau.length(); i++) {
 			if (cau.charAt(i) == chuCanTim) {
                 dem++;
-                System.out.println("Vị trí thứ " + dem + " của chữ '" + chuCanTim + "' là : " + (i+1));
+                System.out.println("Vị trí (index) thứ " + dem + " của chữ '" + chuCanTim + "' là : " + i);
             }
         }
 		
