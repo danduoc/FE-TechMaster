@@ -44,6 +44,7 @@ public class FT extends Person {
 		super.display();
 		System.out.println("Lương: " + salary());
 	}
+
 	public static ArrayList<FT> findMaxSalary(ArrayList<FT> listP) {
 		ArrayList<FT> nhap = new ArrayList<>();
 		long maxS = 0;
